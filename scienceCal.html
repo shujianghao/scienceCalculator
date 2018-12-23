@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>计算器</title>
+ <link href="style.css" rel="stylesheet" type="text/css"/>
+  <script src="script.js"></script>
+ 
+</head>
+<body>
+<div id="calculator">
+	<div class="rescult">
+		<textarea type="text" id="result0" onfocus="this.blur();"></textarea>
+		<textarea type="text" id="result" onfocus="this.blur();"></textarea>
+	</div>
+ 	<div>
+		<section class="model-1">           <!--包含按钮的一个长形区域-->
+		  <div class="checkbox"  onclick="styleChange()">			
+		  <!--包含按钮的一个较小长形区域-->
+		    <input type="checkbox"/>
+		    <label>科学标准</label>					<!--按钮底部的灰色滑动区-->
+		  </div>
+		</section>
+	</div>
+	<!--标准计算器布局-->
+ 	<div id="rows" style="display:inline;">
+	<div class="row1">
+		<button id="bt1" onclick="zero()">C</button>
+		<button id="bt2" onclick="back()">DEL</button>
+		<button id="bt3" onclick="divide()">÷</button>
+		<button id="bt4" onclick="times()">×</button>
+	</div>
+	<div class="row2">
+		<button id="bt5" onclick="num(7)">7</button>
+		<button id="bt6" onclick="num(8)">8</button>
+		<button id="bt7" onclick="num(9)">9</button>
+		<button id="bt8" onclick="plus()">+</button>
+	</div>
+	<div class="row3">
+		<button id="bt9" onclick="num(4)">4</button>
+		<button id="bt10" onclick="num(5)">5</button>
+		<button id="bt11" onclick="num(6)">6</button>
+		<button id="bt12" onclick="minus()">-</button>
+	</div>
+ 
+	<div id="below">
+		<div id="left">
+			<div class="row4">
+				<button id="bt13" onclick="num(1)">1</button>
+				<button id="bt14" onclick="num(2)">2</button>
+				<button id="bt15" onclick="num(3)">3</button>
+			</div>
+			<div class="row5">
+				<button id="bt16" onclick="num(0)">0</button>
+				<button id="bt17" onclick="dot()">.</button>
+			</div>
+		</div>
+		<div id="right">
+			<button id="bt18" onclick="equal()">=</button>
+		</div>
+	</div>
+ 
+	</div>
+ 
+	<!--科学计算器布局-->
+	<div id="sci"  style="display:none;">
+		<div class="sci1">
+				<button id="bt21" onclick="zero()">C</button>
+				<button id="bt22" onclick="back()">DEL</button>
+				<button id="bt23" onclick="pow1()">^</button>
+				<button id="bt24" onclick="num('π')">π</button>
+				<button id="bt25" onclick="pow2()">√</button>
+		</div>
+		<div class="sci2">
+				<button id="bt26" onclick="sin()">sin</button>
+				<button id="bt27" onclick="num('(')">(</button>
+				<button id="bt28" onclick="num(')')">)</button>
+				<button id="bt29" onclick="divide1()">1/X</button>
+				<button id="bt30" onclick="divide()">÷</button>
+		</div>
+		<div class="sci3">
+				<button id="bt31" onclick="cos()">cos</button>
+				<button id="bt32" onclick="num(7)">7</button>
+				<button id="bt33" onclick="num(8)">8</button>
+				<button id="bt34" onclick="num(9)">9</button>
+				<button id="bt35" onclick="times()">×</button>
+		</div>
+		<div class="sci4">
+				<button id="bt36" onclick="tan()">tan</button>
+				<button id="bt37" onclick="num(4)">4</button>
+				<button id="bt38" onclick="num(5)">5</button>
+				<button id="bt39" onclick="num(6)">6</button>
+				<button id="bt40" onclick="minus()">-</button>
+		</div>
+		<div class="sci5">
+				<button id="bt41" onclick="ln()">ln</button>
+				<button id="bt42" onclick="num(1)">1</button>
+				<button id="bt43" onclick="num(2)">2</button>
+				<button id="bt44" onclick="num(3)">3</button>
+				<button id="bt45" onclick="plus()">+</button>
+		</div>
+		<div class="sci6">
+				<button id="bt46" onclick="log()">log</button>
+				<button id="bt47" onclick="num(0)">0</button>
+				<button id="bt48" onclick="dot()">.</button>
+				<button id="bt49" onclick="quyu()">%</button>
+				<button id="bt50" onclick="equal()">=</button>
+		</div>
+ 
+	</div>
+ 
+	
+</div>
+ 
+</body>
+</html>
